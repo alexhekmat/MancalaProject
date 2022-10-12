@@ -1,2 +1,2 @@
-class Human import Player:
-
+class Human(Player):
+    pass
