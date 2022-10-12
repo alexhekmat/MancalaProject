@@ -1,3 +1,3 @@
 class Game:
 
-    def turn(self):
+    def turn(self, player):
