@@ -6,6 +6,7 @@ def __init__(self):
     self.hole_left = 2
     self.gameboard = [self.hole_right, self.hole_left]
 
+
 ##This constructor will construct the amount of seeds in each hole for the player
 def get_right(self):
 ##This method will access the amount of seeds in the left hole
