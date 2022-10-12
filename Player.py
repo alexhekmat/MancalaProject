@@ -20,5 +20,3 @@ class Player:
     def change_right_hole(self, hr):
         self.hole_right = hr
     ## This method will mutate the amount of seeds in the left hole
-    def change_left_hole(self, hl):
-        self.hole_left = hl
