@@ -1,3 +1,3 @@
-from Player import Player
+from Human import Human
 
-player1 = Player()
+player1 = Human()
