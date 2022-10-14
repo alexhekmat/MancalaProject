@@ -1,10 +1,12 @@
 class Gameboard:
 
-    def __init__(self,p1,p2):
+    def __init__(self, p1, p2):
         self.player1 = p1
         self.player2 = p2
 
     def sow_seed(self, player):
+        return 0
+
     def checks_winner(self, player):
         if ( player.get_Right() == 0) and (player.get_left() == 0):
             return "no move"
