@@ -4,7 +4,15 @@ class Gameboard:
         self.player1 = p1
         self.player2 = p2
 
-    def sow_seed(self, player):
+    def sow_seed(self, player, rl):
+        if rl == "r":
+
+
+
+
+
+        elif rl == "l":
+
     def checks_winner(self, player):
         if ( player.get_Right() == 0) and (player.get_left() == 0):
             return "no move"
