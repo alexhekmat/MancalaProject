@@ -20,8 +20,13 @@ class Player:
         return self.gameboard
     ## This method will mutate the amount of seeds in the right hole
 
-    def change_right_hole(self, hr):
-        self.hole_right = hr
+    def change_right_hole(self):
+        self.hole_right = self.hole_right + 1
     ## This method will mutate the amount of seeds in the left hole
-    def change_left_hole(self, hl):
-        self.hole_left = hl
+
+    def change_left_hole(self):
+        self.hole_left = self.hole_left + 1
+
+    def choose_hole(self):
+        whichHole = input("Do you want hole Right (0) or hole Left (1)?")
+        return int(whichHole)
