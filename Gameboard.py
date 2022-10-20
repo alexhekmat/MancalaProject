@@ -22,6 +22,7 @@ class Gameboard:
                     seeds = seeds - 1
         else:
             seeds = p1.get_left()
+            p1.empty_hole(choice)
             while seeds > 0:
                 p1.change_right_hole()
                 seeds = seeds - 1
