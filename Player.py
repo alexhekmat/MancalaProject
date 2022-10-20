@@ -27,6 +27,11 @@ class Player:
     def change_left_hole(self):
         self.hole_left = self.hole_left + 1
 
+    def empty_hole(self, choice):
+        if choice == 0:
+            self.hole_right = 0
+        else:
+            self.hole_left = 0
     def choose_hole(self):
         whichHole = input("Do you want hole Right (0) or hole Left (1)?")
         return int(whichHole)

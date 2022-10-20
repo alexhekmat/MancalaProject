@@ -7,6 +7,7 @@ class Gameboard:
     def sow_seed(self, p1, p2, choice):
         if choice == 0:
             seeds = p1.get_right()
+            p1.empty_hole(choice)
             while seeds > 0:
                 p2.change_left_hole()
                 seeds = seeds - 1
