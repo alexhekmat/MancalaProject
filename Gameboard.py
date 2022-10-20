@@ -5,7 +5,6 @@ class Gameboard:
         self.player2 = p2
 
     def sow_seed(self, p1, p2, choice):
-        self.print_board(p1,p2)
         if choice == 0:
             seeds = p1.get_right()
             while seeds > 0:
@@ -34,6 +33,7 @@ class Gameboard:
                 if seeds > 0:
                     p1.change_left_hole()
                     seeds = seeds - 1
+        self.print_board(p1, p2)
     def checks_winner(self, player):
         if ( player.get_Right() == 0) and (player.get_left() == 0):
             return "no move"
