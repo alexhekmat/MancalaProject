@@ -6,4 +6,4 @@ player2 = Human()
 gameboard = Gameboard(player1, player2)
 
 choice = player1.choose_hole()
-gameboard.sow_seed(player1, player2)
+gameboard.sow_seed(player1, player2, choice)
