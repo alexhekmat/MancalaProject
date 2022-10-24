@@ -41,6 +41,6 @@ class Gameboard:
             return "no move"
     def print_board(self, player1, player2):
         print([player1.get_right(), player1.get_left()])
-        print([player2.get_left(), player2.right()])
+        print([player2.get_left(), player2.get_right()])
 
 
