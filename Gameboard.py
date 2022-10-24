@@ -22,7 +22,6 @@ class Gameboard:
                     seeds = seeds - 1
         else:
             seeds = p1.get_left()
-            print( seeds )
             p1.empty_hole(choice)
             while seeds > 0:
                 p1.change_right_hole()
@@ -42,6 +41,6 @@ class Gameboard:
             return "no move"
     def print_board(self, player1, player2):
         print([player1.get_right(), player1.get_left()])
-        print([player2.get_left(), player2.get_right()])
+        print([player2.get_left(), player2.right()])
 
 
