@@ -35,7 +35,7 @@ class Gameboard:
                 if seeds > 0:
                     p1.change_left_hole()
                     seeds = seeds - 1
-        self.print_board(p1, p2)
+
     def checks_winner(self, player):
         if ( player.get_Right() == 0) and (player.get_left() == 0):
             return "no move"
