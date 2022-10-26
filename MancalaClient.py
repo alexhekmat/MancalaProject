@@ -36,5 +36,5 @@ while (gameboard.checks_winner(player1)) and (gameboard.checks_winner(player2)):
         gameboard.sow_seed(player2, player1, choice)
         gameboard.print_board(player1, player2)
     else:
-        print("First Player Wins")
+        print( "First Player Wins")
         break
