@@ -23,6 +23,7 @@ while (gameboard.checks_winner(player1)) and (gameboard.checks_winner(player2)):
         gameboard.print_board(player1, player2)
     else:
         print("Second Player Wins")
+        break
     if gameboard.checks_winner(player2):
         print("Second Player Choose a Hole!")
         choice = player2.choose_hole()
@@ -35,4 +36,5 @@ while (gameboard.checks_winner(player1)) and (gameboard.checks_winner(player2)):
         gameboard.sow_seed(player2, player1, choice)
         gameboard.print_board(player1, player2)
     else:
-        print("Player 2 Wins")
+        print("First Player Wins")
+        break
