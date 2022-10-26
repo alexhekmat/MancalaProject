@@ -8,7 +8,6 @@ print("The Mini Mancala board is viewed from a top down angle, therefore the fir
       "views the top half of the board reversed")
 gameboard.print_board(player1, player2)
 
-
 while (gameboard.checks_winner(player1)) or (gameboard.checks_winner(player2)):
     if gameboard.checks_winner(player1):
         print("First Player Choose a Hole!")
