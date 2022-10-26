@@ -4,12 +4,12 @@ from Gameboard import Gameboard
 player1 = Human()
 player2 = Human()
 gameboard = Gameboard(player1, player2)
-
-gameboard.print_board(player1, player2)
-
 print("The Mini Mancala board is viewed from a top down angle, therefore the first player "
       "views the top half of the board reversed")
-while (gameboard.checks_winner(player1)) and (gameboard.checks_winner(player2)):
+gameboard.print_board(player1, player2)
+
+
+while (gameboard.checks_winner(player1)) or (gameboard.checks_winner(player2)):
     if gameboard.checks_winner(player1):
         print("First Player Choose a Hole!")
         choice = player1.choose_hole()
@@ -36,5 +36,5 @@ while (gameboard.checks_winner(player1)) and (gameboard.checks_winner(player2)):
         gameboard.sow_seed(player2, player1, choice)
         gameboard.print_board(player1, player2)
     else:
-        print( "First Player Wins")
+        print("First Player Wins")
         break
