@@ -34,5 +34,5 @@ class Player:
         else:
             self.hole_left = 0
     def choose_hole(self):
-        whichHole = int(input("Do you want hole Right (0) or hole Left (1)?"))
+        whichHole = int(input("Do you want your Right hole (0) or your Left hole (1)?"))
         return whichHole

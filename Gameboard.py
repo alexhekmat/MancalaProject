@@ -22,9 +22,6 @@ class Gameboard:
                     seeds = seeds - 1
         else:
             seeds = p1.get_left()
-            if seeds == 0:
-                print("Invalid choice, pick hole again")
-                return
             p1.empty_hole(choice)
             while seeds > 0:
                 p1.change_right_hole()
