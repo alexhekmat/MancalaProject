@@ -20,15 +20,18 @@ class Gameboard:
             while seeds > 0:
                 p2.change_left_hole()
                 seeds = seeds - 1
-                ## Runs in a counter clockwise order for each hole using an if to determine if it should be placed in the hole
+                ## Runs in a counter clockwise order for each hole using an if to determine if
+                ## it should be placed in the hole
                 if seeds > 0:
                     p2.change_right_hole()
                     seeds = seeds - 1
-                ## Runs in a counter clockwise order for each hole using an if to determine if it should be placed in the hole
+                ## Runs in a counter clockwise order for each hole using an if to determine if
+                ## it should be placed in the hole
                 if seeds > 0:
                     p1.change_left_hole()
                     seeds = seeds - 1
-                ## Runs in a counter clockwise order for each hole using an if to determine if it should be placed in the hole
+                ## Runs in a counter clockwise order for each hole using an if to determine if
+                ## it should be placed in the hole
                 if seeds > 0:
                     p1.change_right_hole()
                     seeds = seeds - 1
@@ -39,31 +42,36 @@ class Gameboard:
             while seeds > 0:
                 p1.change_right_hole()
                 seeds = seeds - 1
-                ## Runs in a counter clockwise order for each hole using an if to determine if it should be placed in the hole
+                ## Runs in a counter clockwise order for each hole using an if to determine
+                ## if it should be placed in the hole
                 if seeds > 0:
                     p2.change_left_hole()
                     seeds = seeds - 1
-                ## Runs in a counter clockwise order for each hole using an if to determine if it should be placed in the hole
+                ## Runs in a counter clockwise order for each hole using an if to determine
+                ## if it should be placed in the hole
                 if seeds > 0:
                     p2.change_right_hole()
                     seeds = seeds - 1
-                ## Runs in a counter clockwise order for each hole using an if to determine if it should be placed in the hole
+                ## Runs in a counter clockwise order for each hole using an if to determine
+                ## if it should be placed in the hole
                 if seeds > 0:
                     p1.change_left_hole()
                     seeds = seeds - 1
 
 
-    ## This method checks if the player parameters holes both have zero seeds in them, if it returns false they do, if not true
+    ## This method checks if the player parameters holes both have zero seeds in them,
+    ## if it returns false they do, if not true
     ## Param: player is a player object
     ## Returns: a boolean either True or False
     def checks_winner(self, player):
-        ## Checks if the players right and left holes are both zero, returning false if they are, and true if they are not
+        ## Checks if the players right and left holes are both zero,
+        ## returns false if they are both 0, and true if they are not
         if (player.get_right() == 0) and (player.get_left() == 0):
             return False
         else:
             return True
 
-    ## This method prints the 2 arrays to print the board showcasing it from a top down view
+    ## This method prints the 2 arrays to print the board showcasing it from a top-down view
     ## Param: player1 is a player object
     ## Param: player2 is a player object
     def print_board(self, player1, player2):
